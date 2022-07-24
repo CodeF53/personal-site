@@ -3,3 +3,29 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
+
+#links-contact {
+    background: rgba(255,255,255, 0.05);
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.button {
+    background: rgba(255,255,255, 0.05);
+    border-radius: 20px;
+    padding: 2%;
+    color: white;
+    margin: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.button svg, .button svg image {
+    width: 64px;
+    height: 64px;
+    fill: white;
+}
+
+.modrinthsvg {
+    filter: contrast(0%) brightness(1000%);
+}
