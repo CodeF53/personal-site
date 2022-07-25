@@ -53,9 +53,6 @@ a.button:hover svg, a.button:hover svg image  {
     fill: darkcyan;
 }
 
-.modrinthsvg {
-    filter: contrast(0%) brightness(1000%);
-}
  
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
