@@ -3,6 +3,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     color: white;
     display:flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -14,7 +15,6 @@ canvas#background {
     height:100%;
     z-index: 0;
 }
-
 
 h1, h2, h3, h4, h5 {
     margin-top: 0;
@@ -28,7 +28,14 @@ h2 {
     font-size: 2.5em;
 }
 
+#NameBanner {
+    margin-left:auto;
+    margin-right:auto;
+}
+
 #links-contact {
+    margin-left:auto;
+    margin-right:auto;  
     background: rgba(255,255,255, 0.05);
     border-radius: 1em;
     padding: 1em;
@@ -36,6 +43,7 @@ h2 {
     width: fit-content;
     text-align: center;
     z-index: 1;
+    backdrop-filter: blur(5px);
 }
 
 .button {
@@ -62,6 +70,9 @@ h2 {
 
 a.button:hover svg, a.button:hover svg image  {
     fill: darkcyan;
+}
+a.button:hover  {
+    background: rgba(255,255,255, 0.1);
 }
  
 a:link { text-decoration: none; }
