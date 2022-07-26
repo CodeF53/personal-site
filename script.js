@@ -39,7 +39,7 @@ function drawLine(point0, point1) {
 }
 
 numpoints = 25;
-maxspeed = 1;
+maxspeed = 0.25;
 points = [];
 for (let i = 0; i < numpoints; i++) {
     // x, y, xV, yV, size
