@@ -27,13 +27,17 @@ h1 {
 h2 {
     font-size: 2.5em;
 }
+p {
+    font-size: 1em;
+    text-align: left;
+}
 
 #NameBanner {
     margin-left:auto;
     margin-right:auto;
 }
 
-#links-contact {
+.panel {
     margin-left:auto;
     margin-right:auto;  
     background: rgba(255,255,255, 0.05);
@@ -44,7 +48,17 @@ h2 {
     text-align: center;
     z-index: 1;
     backdrop-filter: blur(5px);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    max-width: 70%;
 }
+
+/*#about {
+
+}
+#links-contact {
+
+}*/
 
 .button {
     background: rgba(255,255,255, 0.05);
