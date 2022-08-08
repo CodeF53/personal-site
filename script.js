@@ -1,6 +1,11 @@
+// Constants used in math and stuff
 const width = window.innerWidth;
 const height = window.innerHeight;
 const screenMaxLength = Math.sqrt(Math.pow(width, 2) + Math.pow(height, 2));
+
+// PointCloud Settings
+const numpoints = 30;
+const maxspeed = 0.25;
 
 // PointCloud Canvas Definition
 const canvas = document.getElementById('background');
@@ -8,10 +13,6 @@ canvas.width = width
 canvas.height = height
 const ctx = canvas.getContext('2d');
 ctx.fillStyle = "#FFFFFF";
-
-// PointCloud Settings
-numpoints = 30;
-maxspeed = 0.25;
 
 // Math Functions
 function rand(min, max) {
