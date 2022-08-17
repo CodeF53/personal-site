@@ -5,8 +5,13 @@ body {
     display:flex;
     flex-direction: column;
     justify-content: center;
+
+    user-drag: none;
+    -webkit-user-drag: none;
+    position: relative
 }
 
+/* Fit PointCloud canvas perfectly to window */
 canvas#background {
     position:fixed;
     left:0;
@@ -16,11 +21,11 @@ canvas#background {
     z-index: 0;
 }
 
+/* font size and margins */
 h1, h2, h3, h4, h5 {
     margin-top: 0;
     margin-bottom: 0;
 }
-
 h1 {
     font-size:5em;
 }
@@ -46,12 +51,13 @@ p {
     justify-content: center;
     width: fit-content;
     text-align: center;
-    z-index: 1;
+    z-index: 2;
     backdrop-filter: blur(5px);
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
+/* button */
 .button {
     background: rgba(255,255,255, 0.05);
     border-radius: 20px;
@@ -60,31 +66,64 @@ p {
     justify-content: center;
     width: fit-content;
     padding: 1em;
+    position:relative; 
+    /* cursor: none; */
 }
-
-
+/* size and fill color of button icons */
 .button svg, .button svg image {
-    width: 3em;
-    height: 3em;
+    width: 3em; height: 3em;
     fill: white;
+}
+/* color button icons darkcyan when hovered */
+.button:hover svg, .button:hover svg image  { fill: darkcyan; }
+/* double button background opacity when hovered to hint to user that its a button */
+.button:hover  { background: rgba(255,255,255, 0.1); }
 
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+/* make links not be so loud color */
+p a { color: aliceblue; }
+/* Hide link underlines */
+.button a { text-decoration: none; }
+
+/* popout */
+#discord-popout {
+    display:flex;
+    flex-direction:row;
+    z-index: 1;
+}
+#discord-icon {
+    border-radius: 50%;
+}
+#discord-online-color {
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    height: 20px;
+    width: 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+#discord-ID-status {
+    display:flex;
+    flex-direction: column;
+    justify-content: left; 
+    text-align: left; 
+    padding-left: 0.5em;
+}
+#discord-popout h3 {
+    font-size: 2em;
+}
+.hidden {
+    display: none!important;
 }
 
-a.button:hover svg, a.button:hover svg image  {
-    fill: darkcyan;
-}
-a.button:hover  {
-    background: rgba(255,255,255, 0.1);
-}
-
-p a {
-    color: aliceblue;
-}
-
-.button a {
-    text-decoration: none;
+.title {
+    position: absolute; /* must have this */
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    color: white;
+    font-size: 1em;
+    padding: 0.5em;
+    border-radius: 1em;
+    z-index: 100;
+    pointer-events: none;
 }
