@@ -90,33 +90,33 @@ addEventListener('DOMContentLoaded', (event) => {
         }
     })
 
-    // tooltip
-    tooltip = document.createElement("span");
-    tooltip.style.visibility = "hidden"
-    tooltip.classList = ["title"]
+    // Make our tooltip
+    let tooltip = document.createElement("span")
+    tooltip.id = "tooltip"
     document.body.appendChild(tooltip)
-
-    function onHoverToggleTooltip( e ) {
-        tooltip.style.top = e.pageY/*-(tooltip.offsetHeight/2)*/+"px"
-        tooltip.style.left = e.pageX/*-(tooltip.offsetWidth/2)*/+"px"
-        
-        switch(e.type) {
-            case "mouseenter":
-                tooltip.innerHTML = this.getAttribute("tt-title")
-                tooltip.style.visibility = "visible"
-                break;
-            case "mouseleave":
-                tooltip.style.visibility = "hidden"
-                break;
-        }
-    }
-
-    console.log(document.querySelectorAll(".tooltip"))
-    document.querySelectorAll(".tooltip").forEach(element => {
-        element.addEventListener("mouseenter", onHoverToggleTooltip)
-        element.addEventListener("mouseleave", onHoverToggleTooltip)
-        element.addEventListener("mousemove", onHoverToggleTooltip)
+    // add event listeners to elements that have a tooltip
+    document.querySelectorAll("[tooltip]").forEach(element => {
+        element.addEventListener("mouseenter", updateTooltip)
+        element.addEventListener("mouseleave", updateTooltip)
+        element.addEventListener("mousemove", updateTooltip)
     })
+    function updateTooltip(mouseEvent) {
+        // Move tooltip to our current cursor position
+        tooltip.style.top = mouseEvent.pageY+"px"
+        tooltip.style.left = mouseEvent.pageX+"px"
+    
+        switch(mouseEvent.type) {
+        case "mouseenter":
+            // update text and show tooltip when we hover
+            tooltip.innerHTML = this.getAttribute("tooltip")
+            tooltip.style.visibility = "visible"
+            break;
+        case "mouseleave":
+            // hide the tooltip when we are no longer above a tooltip element
+            tooltip.style.visibility = "hidden"
+            break;
+        }
+    }    
 
     // stop buttons being draggable
     window.ondragstart = function() {return false}

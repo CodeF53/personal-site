@@ -116,14 +116,17 @@ p a { color: aliceblue; }
     display: none!important;
 }
 
-.title {
-    position: absolute; /* must have this */
+#tooltip {
+    position: absolute;
+    pointer-events: none;
+    z-index: 100; /* anything higher than the highest z index you use */
+    visibility: hidden;
+
+    /* actual styling */
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(5px);
     color: white;
     font-size: 1em;
     padding: 0.5em;
     border-radius: 1em;
-    z-index: 100;
-    pointer-events: none;
 }
