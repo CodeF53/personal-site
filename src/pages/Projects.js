@@ -28,9 +28,9 @@ export default function Projects() {
       <li>
         <ProjectFolder title="Minecraft Mods" dateRange="11/2021 - 7/2022"
           desc={ <p>
-            Recreations of various websites for my project at the end of each phase at Flatiron.
+            Mods made for the popular Minecraft Java edition
             <br/>
-            These were all made in a week, with 1-2 partners.
+            These are all QOL(quality of life), nice things to have that smooth the edges of a otherwise rough feature in the game.
           </p> }
           projects={<>
             <ProjectPreview title="Cardinal Ice Boats" dateRange="6/2022 - 7/2022" desc="Provides Several QOL Utilities for Ice Boating" image="https://cdn.modrinth.com/data/1m9s2ZhL/a4591cd24f7d52828ca964e339ad1e41ab7cf6de.png"/>
