@@ -21,13 +21,25 @@
 // Custom component styling
 .labeled_input > label { margin-right: 1rem; }
 .invisible { opacity: 0; cursor: default; }
-.link { color: aqua; text-decoration: underline; }
+.link { color: var(--acc-color-bright); text-decoration: underline; }
 .error { color: #F00; }
-.panel {
+panel, .panel {
   background-color: var(--bkg-elev1);
+  backdrop-filter: blur(.25rem);
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.237);
+}
+
+.social-icon {
+  border: solid 0.333rem var(--bkg-elev1) ;
+  border-radius: 100%;
+
+  &:hover { border-color: var(--bkg-elev2); }
+
+  .social-svg {
+    & > .social-svg-background { fill: var(--txt-color) !important; }
+  }
 }
 
 // HTML default component styling
@@ -47,7 +59,9 @@ button, input, textarea {
   &.elev2 { &:hover, &:active { background-color: var(--bkg-elev3) } }
   &.elev3 { &:hover, &:active { background-color: var(--bkg-elev4) } }
 }
-button {
+.button, button {
+  transition: scale 100ms ease-in-out;
+
   scale: 0.95;
   &:hover  { scale: 1 }
   &:active { scale: 0.95; }
@@ -62,4 +76,7 @@ button {
   --bkg-elev4: rgba(255,255,255, 0.20);
 
   --txt-color: #ffffff;
+
+  --acc-color-dark: darkcyan;
+  --acc-color-bright: cyan;
 }
