@@ -1,14 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.a4b8bf8f.css",
-    "main.js": "/static/js/main.f8322fee.js",
-    "static/media/icon.png": "/static/media/icon.2b8f5f4eacb043bb4919.png",
+    "main.js": "/static/js/main.d9c3b36f.js",
+    "static/media/mk8.png": "/static/media/mk8.7403fb94c53c1a1260cc.png",
+    "static/media/horsebuff.png": "/static/media/horsebuff.43759ee9a764ad81aeef.png",
+    "static/media/baritone.png": "/static/media/baritone.e65089605fcf556e138c.png",
+    "static/media/iceboat.png": "/static/media/iceboat.c74b2fba1a2d994d3edf.png",
+    "static/media/testworld.png": "/static/media/testworld.4677d8e898b8d48bde52.png",
+    "static/media/stfu.png": "/static/media/stfu.47d073328c8d2f2f3162.png",
+    "static/media/packxbr.png": "/static/media/packxbr.79cd0fe0bee2c09dc1a2.png",
+    "static/media/flap.png": "/static/media/flap.b16c8fa1d941b0218946.png",
+    "static/media/modrinth.png": "/static/media/modrinth.e85ffcc73ee73a602c6c.png",
+    "static/media/inhumane-cards.png": "/static/media/inhumane-cards.2b8f5f4eacb043bb4919.png",
     "index.html": "/index.html",
     "main.a4b8bf8f.css.map": "/static/css/main.a4b8bf8f.css.map",
-    "main.f8322fee.js.map": "/static/js/main.f8322fee.js.map"
+    "main.d9c3b36f.js.map": "/static/js/main.d9c3b36f.js.map"
   },
   "entrypoints": [
     "static/css/main.a4b8bf8f.css",
-    "static/js/main.f8322fee.js"
+    "static/js/main.d9c3b36f.js"
   ]
 }
