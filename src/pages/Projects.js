@@ -26,7 +26,7 @@ export default function Projects() {
         </ProjectFolder>
       </li>
       <li>
-        <ProjectFolder title="Minecraft Mods" dateRange="11/2021 - 7/2022"
+        <ProjectFolder title="Minecraft Mods" dateRange="8/2021 - 7/2022"
           desc={ <p>
             Mods made for the popular Minecraft Java edition
             <br/>
@@ -36,6 +36,8 @@ export default function Projects() {
             <ProjectPreview title="Cardinal Ice Boats" dateRange="6/2022 - 7/2022" desc="Provides Several QOL Utilities for Ice Boating" image="https://cdn.modrinth.com/data/1m9s2ZhL/a4591cd24f7d52828ca964e339ad1e41ab7cf6de.png"/>
             <ProjectPreview title="For the Love of God Would You Shut Up" dateRange="4/2022 - 4/2022" desc="Reverts an annoying change related to note blocks" image="https://cdn.modrinth.com/data/hUFltDd4/icon.png"/>
             <ProjectPreview title="Horse Buff" dateRange="11/2021 - 7/2022" desc="QOL tweaks for horses" image="https://cdn.modrinth.com/data/IrrG0G8l/icon.png"/>
+            <ProjectPreview title="AltoClef" dateRange="8/2021 - 8/2021" desc="Automation Tools, I made a big PR for migrating the project to Fabric" image="https://cdn.discordapp.com/attachments/881594840712871947/881607008120352778/unknown.png"/>
+              {/* https://github.com/gaucho-matrero/altoclef/commit/75f9c78e0e747631ebd55b81a4c36300dc6d4e24 */}
           </>}>
         </ProjectFolder>
       </li>
