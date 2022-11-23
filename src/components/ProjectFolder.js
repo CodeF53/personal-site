@@ -7,7 +7,7 @@ export default function ProjectFolder({ title, dateRange, desc, projects}) {
       <Spacer/>
       <span>{dateRange}</span>
     </div>
-    <p>{desc}</p>
+    {desc}
     {projects}
   </panel>
 }
