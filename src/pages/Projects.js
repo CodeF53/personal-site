@@ -1,15 +1,26 @@
 import ProjectPreview from "../components/ProjectPreview";
 import ProjectFolder from "../components/ProjectFolder";
 
-import CardsIcon from "../assets/inhumane_cards/icon.png"
-import FlapIcon from "../assets/flap/icon.png"
+import baritoneIcon from "../assets/project-icons/baritone.png"
+import flapIcon from "../assets/project-icons/flap.png"
+import horsebuffIcon from "../assets/project-icons/horsebuff.png"
+import iceboatIcon from "../assets/project-icons/iceboat.png"
+import inhumaneCardsIcon from "../assets/project-icons/inhumane-cards.png"
+import mk8Icon from "../assets/project-icons/mk8.png"
+import modrinthIcon from "../assets/project-icons/modrinth.png"
+import packXBRIcon from "../assets/project-icons/packxbr.png"
+import splitgateIcon from "../assets/project-icons/splitgate.png"
+import stfuIcon from "../assets/project-icons/stfu.png"
+import testWorldIcon from "../assets/project-icons/testworld.png"
+import twitterIcon from "../assets/project-icons/twitter.png"
+import yelpIcon from "../assets/project-icons/yelp.png"
 
 export default function Projects() {
   return <div id="projects" className="col centerChildren">
     <h1>Projects</h1>
     <ul className="col">
       <li>
-        <ProjectPreview title="Inhumane Cards" dateRange="11/2022 - Present" desc="An online implementation of Cards Against Humanity" image={CardsIcon}/>
+        <ProjectPreview title="Inhumane Cards" dateRange="11/2022 - Present" desc="An online implementation of Cards Against Humanity" image={inhumaneCardsIcon}/>
       </li>
       <li>
         <ProjectFolder title="Website Recreations" dateRange=""
@@ -19,9 +30,9 @@ export default function Projects() {
             These were all made in a week, with 1-2 partners.
           </p> }
           projects={<>
-            <ProjectPreview title="Chirp" dateRange="10/2022 - 11/2022" desc="A clone of Twitter" image="https://i.pinimg.com/originals/4c/c2/3e/4cc23e28035d3bef286c29139319c044.png"/>
-            <ProjectPreview title="Yalp" dateRange="9/2022 - 10/2022" desc="A clone of Yelp" image="https://img.freepik.com/free-icon/yelp_318-193765.jpg?w=2000"/>
-            <ProjectPreview title="Modrinth Clone" dateRange="8/2022 - 8/2022" desc="A clone of the Modrinth search frontend made with Pure JS and HTML" image="https://raw.githubusercontent.com/CodeF53/phase-1-project-modrinth-search/ddb9d5c772183470b602d70d31831971a9740879/assets/favicon.svg"/>
+            <ProjectPreview title="Chirp" dateRange="10/2022 - 11/2022" desc="A clone of Twitter" image={twitterIcon}/>
+            <ProjectPreview title="Yalp" dateRange="9/2022 - 10/2022" desc="A clone of Yelp" image={yelpIcon}/>
+            <ProjectPreview title="Modrinth Clone" dateRange="8/2022 - 8/2022" desc="A clone of the Modrinth search frontend made with Pure JS and HTML" image={modrinthIcon}/>
           </>}>
         </ProjectFolder>
       </li>
@@ -33,22 +44,26 @@ export default function Projects() {
             These are all QOL(quality of life), nice things to have that smooth the edges of a otherwise rough feature in the game.
           </p> }
           projects={<>
-            <ProjectPreview title="Cardinal Ice Boats" dateRange="6/2022 - 7/2022" desc="Provides Several QOL Utilities for Ice Boating" image="https://cdn.modrinth.com/data/1m9s2ZhL/a4591cd24f7d52828ca964e339ad1e41ab7cf6de.png"/>
-            <ProjectPreview title="For the Love of God Would You Shut Up" dateRange="4/2022 - 4/2022" desc="Reverts an annoying change related to note blocks" image="https://cdn.modrinth.com/data/hUFltDd4/icon.png"/>
-            <ProjectPreview title="Horse Buff" dateRange="11/2021 - 7/2022" desc="QOL tweaks for horses" image="https://cdn.modrinth.com/data/IrrG0G8l/icon.png"/>
-            <ProjectPreview title="AltoClef" dateRange="8/2021 - 8/2021" desc="Automation Tools, I made a big PR for migrating the project to Fabric" image="https://cdn.discordapp.com/attachments/881594840712871947/881607008120352778/unknown.png"/>
+            <ProjectPreview title="Quick Test World" dateRange="7/2022 - 8/2022" desc="Adds a new world type for quickly making test worlds" image={testWorldIcon}/>
+            <ProjectPreview title="Cardinal Ice Boats" dateRange="6/2022 - 7/2022" desc="Provides Several QOL Utilities for Ice Boating" image={iceboatIcon}/>
+            <ProjectPreview title="For the Love of God Would You Shut Up" dateRange="4/2022 - 4/2022" desc="Reverts an annoying change related to note blocks" image={stfuIcon}/>
+            <ProjectPreview title="Horse Buff" dateRange="11/2021 - 7/2022" desc="QOL tweaks for horses" image={horsebuffIcon}/>
+            <ProjectPreview title="AltoClef" dateRange="8/2021 - 8/2021" desc="Automation Tools, I made a big PR for migrating the project to Fabric" image={baritoneIcon}/>
               {/* https://github.com/gaucho-matrero/altoclef/commit/75f9c78e0e747631ebd55b81a4c36300dc6d4e24 */}
           </>}>
         </ProjectFolder>
       </li>
       <li>
-        <ProjectPreview title="Mario Kart Mods" dateRange="3/2022 - 5/2022" desc="A set of mods that changed how Mario Kart 8 Deluxe Looked and Played" image="https://external-preview.redd.it/eQDrGAx61Azyz9TARuuDVNrQavH3TSru-EvPZjTbTmU.jpg?width=640&crop=smart&auto=webp&s=bce087a767663f35e42250fe9e60da6db1a0638a"/>
+        <ProjectPreview title="Mario Kart Mods" dateRange="3/2022 - 5/2022" desc="A set of mods that changed how Mario Kart 8 Deluxe Looked and Played" image={mk8Icon}/>
       </li>
       <li>
-        <ProjectPreview title="Splitgate TriggerBot" dateRange="9/2021 - 3/2022" desc="A script made in Python that automated shooting when your crosshair is over an enemy" image="https://cdn2.steamgriddb.com/file/sgdb-cdn/icon/cceafeaa5a753f129eb1aa664ec80a80.ico"/>
+        <ProjectPreview title="Splitgate TriggerBot" dateRange="9/2021 - 3/2022" desc="A script made in Python that automated shooting when your crosshair is over an enemy" image={splitgateIcon}/>
       </li>
       <li>
-        <ProjectPreview title="Flappy Birb" dateRange="5/2019 - 11/2020" desc="A high quality clone of Flappy Bird, with ads, leaderboard, and achievements" image={FlapIcon}/>
+        <ProjectPreview title="Flappy Birb" dateRange="5/2019 - 11/2020" desc="A high quality clone of Flappy Bird, with ads, leaderboard, and achievements" image={flapIcon}/>
+      </li>
+      <li>
+        <ProjectPreview title="PackXBR" dateRange="5/2020 - 5/2022" desc="A utility for automatic application of the XBR scaling algorithm to game textures." image={packXBRIcon}/>
       </li>
     </ul>
   </div>
