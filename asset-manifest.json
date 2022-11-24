@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a4b8bf8f.css",
-    "main.js": "/static/js/main.d9c3b36f.js",
+    "main.js": "/static/js/main.7bb44b3c.js",
     "static/media/mk8.png": "/static/media/mk8.7403fb94c53c1a1260cc.png",
     "static/media/horsebuff.png": "/static/media/horsebuff.43759ee9a764ad81aeef.png",
     "static/media/baritone.png": "/static/media/baritone.e65089605fcf556e138c.png",
@@ -14,10 +14,10 @@
     "static/media/inhumane-cards.png": "/static/media/inhumane-cards.2b8f5f4eacb043bb4919.png",
     "index.html": "/index.html",
     "main.a4b8bf8f.css.map": "/static/css/main.a4b8bf8f.css.map",
-    "main.d9c3b36f.js.map": "/static/js/main.d9c3b36f.js.map"
+    "main.7bb44b3c.js.map": "/static/js/main.7bb44b3c.js.map"
   },
   "entrypoints": [
     "static/css/main.a4b8bf8f.css",
-    "static/js/main.d9c3b36f.js"
+    "static/js/main.7bb44b3c.js"
   ]
 }
