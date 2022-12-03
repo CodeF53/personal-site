@@ -10,7 +10,7 @@ export default function Home() {
     <panel className="about">
       <h2>About Me</h2>
       <ul>
-        <li>19 year old full stack developer, recent graduate of <a href="https://flatironschool.com/campuses/denver/" className="link">FlatIron</a>.</li>
+        <li>Full stack developer, recent graduate of <a href="https://flatironschool.com/campuses/denver/" className="link">FlatIron</a>.</li>
         <li>I spend most of my free time in an IDE developing mods or automating repetitive tasks.</li>
         <li>Fluent in Java, Python, JS, ReactJS, Ruby, Ruby on Rails</li>
         <li>I mainly socialize on Discord, but try check my Email at-least twice daily.</li>
