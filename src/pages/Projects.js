@@ -72,6 +72,8 @@ export default function Projects() {
             Mods made for the popular Minecraft Java edition
             <br/>
             These are all QOL(quality of life), nice things to have that smooth the edges of a otherwise rough feature in the game.
+            <br/>
+            I am continuing to maintain these to this day
           </p> }
           projects={<>
             <ProjectPreview
@@ -137,20 +139,20 @@ export default function Projects() {
       </li>
       <li>
         <ProjectPreview
-          title="Flappy Birb"
-          dateRange="5/2019 - 11/2020"
-          desc="A high quality clone of Flappy Bird, with ads, leaderboard, and achievements"
-          image={flapIcon}
-        />
-      </li>
-      <li>
-        <ProjectPreview
           title="PackXBR"
           dateRange="5/2020 - 5/2022"
           desc="A utility for automatic application of the XBR scaling algorithm to game textures."
           image={packXBRIcon}
           video="https://user-images.githubusercontent.com/37855219/165995159-6b8c2c81-4f74-4c7b-be39-377ad06bcea6.mp4"
           github="https://github.com/CodeF53/PackXBR"
+        />
+      </li>
+      <li>
+        <ProjectPreview
+          title="Flappy Birb"
+          dateRange="5/2019 - 11/2020"
+          desc="A high quality clone of Flappy Bird, with ads, leaderboard, and achievements"
+          image={flapIcon}
         />
       </li>
     </ul>

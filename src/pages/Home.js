@@ -22,8 +22,9 @@ export default function Home() {
 
       <ul className="row centered centerChildren">
         <li><SocialIcon className="button" url="mailto:fseusb@gmail.com"/></li>
-        <li><SocialIcon className="button" url="https://twitter.com/CodeF53"/></li>
+        <li><SocialIcon className="button" url="https://www.linkedin.com/in/chase-welsh/"/></li>
         <li><SocialIcon className="button" url="https://github.com/CodeF53"/></li>
+        <li><SocialIcon className="button" url="https://twitter.com/CodeF53"/></li>
         <li><SocialIcon className="button" url="https://discord.gg/kWajt8G4"/></li>
       </ul>
 
