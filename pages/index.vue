@@ -35,7 +35,8 @@
   <div>
     <h2>TODO:</h2>
     <ul>
-      <li>background: pointcloud + something fancy with mouse movement + parallax scroll</li>
+      <li>background: optimize render</li>
+      <li>background: something fancy with mouse movement</li>
       <li>colors</li>
       <li>experience page: (education + jobs + projects) handled with markdown, click to learn more, filterable, sortable</li>
       <li>blog page: handled with markdown, filterable, sortable</li>
