@@ -14,33 +14,38 @@
       <ul class="links gap4 row centerChildren">
         <li>
           <NuxtLink to="mailto:fseusb@gmail.com" aria-label="email">
-            <img src="/assets/email.svg">
+            <Icon name="material-symbols:mail-rounded" />
             <span>Email</span>
           </NuxtLink>
         </li>
         <li>
           <NuxtLink to="https://github.com/CodeF53" aria-label="github">
-            <img src="/assets/github.svg">
+            <Icon name="ph:github-logo-fill" />
             <span>Github</span>
           </NuxtLink>
         </li>
         <li>
           <NuxtLink to="https://dev.to/f53" aria-label="blog">
-            Blog
+            <Icon name="ri:article-fill" />
+            <span>Blog</span>
           </NuxtLink>
         </li>
+        <!-- <li>
+          <NuxtLink to="https://dev.to/f53" aria-label="blog">
+            <Icon name="mdi:linkedin" />
+            <span>LinkedIn</span>
+          </NuxtLink>
+        </li> -->
       </ul>
     </main>
   </div>
   <div>
     <h2>TODO:</h2>
     <ul>
-      <li>background: move render to worker thread</li>
-      <li>colors</li>
-      <li>experience page: (education + jobs + projects) handled with markdown, click to learn more, filterable, sortable</li>
-      <li>blog page: handled with markdown, filterable, sortable</li>
+      <li>background: move render to worker thread, smoothly move points after a resize</li>
+      <li>markdown articles for blogs and experience, filterable, sortable</li>
       <li>header for non-homepage pages</li>
-      <li>duplicate site, but with real name and picture, with minimal duplicate source code</li>
+      <li>duplicate site, but with real name and picture</li>
     </ul>
   </div>
 </template>
@@ -72,17 +77,33 @@
     display: flex;
     flex-wrap: wrap;
 
-    a {
-      display: flex;
-      gap: .25rem;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
+    li {
+      background-color: var(--accent-light);
+      &, > * { color: var(--accent-dark); }
+      &:hover { filter: brightness(0.95); scale: 0.95; }
+      &:active { filter: brightness(0.9); scale: 1.05; }
+      transition: scale 0.6s cubic-bezier(0.34, 3, 0.64, 1);
+
+      font-weight: bold;
+      padding: .5rem .75rem;
+      border-radius: 1rem;
       cursor: pointer;
-    }
-    img {
-      height: 1.5rem;
+
+      a {
+        display: flex;
+        gap: .25rem;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+
+        > svg {
+          height: 1.25rem;
+          width: 1.25rem;
+        }
+      }
     }
   }
+
+  h1 { color: var(--accent-light); }
 }
 </style>

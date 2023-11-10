@@ -21,6 +21,7 @@
     "eslint": "^8.52.0",
     "lint-staged": "^15.0.2",
     "nuxt": "^3.8.0",
+    "nuxt-icon": "^0.6.5",
     "nuxt-lodash": "^2.5.3",
     "simple-git-hooks": "^2.9.0",
     "typescript": "^5.2.2",

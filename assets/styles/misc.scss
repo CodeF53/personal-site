@@ -1,7 +1,10 @@
 // dark!
 :root {
   color-scheme: dark;
-  background-color: #0c0c0c;
+  --accent-dark: hsl(270, 90%, 5%);
+  --accent-light: hsl(293, 88%, 84%);
+
+  background-color: var(--accent-dark);
 }
 body {
   background-color: transparent;

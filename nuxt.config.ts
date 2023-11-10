@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   typescript: { strict: true, typeCheck: true, shim: false },
-  modules: ['nuxt-lodash'],
+  modules: ['nuxt-lodash', 'nuxt-icon'],
 
   css: ['~/assets/styles/layout.scss', '~/assets/styles/misc.scss', '~/assets/styles/font.scss'],
 
