@@ -8,6 +8,7 @@ export function handleResize() {
   canvas.width = width
   canvas.height = height
   initPoints()
+  updateDrawVars()
 }
 
 export function initCanvas(_canvas: HTMLCanvasElement) {
@@ -18,13 +19,10 @@ export function initCanvas(_canvas: HTMLCanvasElement) {
   canvas.width = width
   canvas.height = height
   ctx = canvas.getContext('2d')!
-  ctx.fillStyle = '#FFFFFF'
-  ctx.strokeStyle = '#FFFFFF'
-
-  initDrawVars(ctx, Math.sqrt(width ** 2 + height ** 2))
+  initDrawVars(ctx)
 }
 
-export function initPoints(numPoints: number = 30, maxSpeed: number = 0.25) {
+export function initPoints(numPoints: number = 50, maxSpeed: number = 0.5) {
   Point.all = []
   Point.maxX = width
   Point.maxY = height

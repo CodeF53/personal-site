@@ -1,32 +1,28 @@
 import type { PointLike } from './point'
 
 let ctx: CanvasRenderingContext2D
-let screenMaxLength: number
-export function initDrawVars(ctx_: CanvasRenderingContext2D, screenMaxLength_: number) {
+let volumeMultiplier: number
+export function initDrawVars(ctx_: CanvasRenderingContext2D) {
   ctx = ctx_
-  screenMaxLength = screenMaxLength_
+  updateDrawVars()
 }
 
-export function drawCircle(point: PointLike) {
-  ctx.beginPath()
-  ctx.arc(point.x, point.y, 4, 0, 360)
-  ctx.fill()
+export function updateDrawVars() {
+  volumeMultiplier = (window.innerHeight * window.innerWidth / 150)
+  ctx.lineWidth = 3
 }
+
+function getTransparency(point0: PointLike, point1: PointLike) {
+  const distanceSquared = (point0.x - point1.x) ** 2 + (point0.y - point1.y) ** 2
+  const transparency = (volumeMultiplier / distanceSquared) - 0.1
+
+  return Math.min(Math.floor(transparency * 255), 255)
+}
+
 export function drawLine(point0: PointLike, point1: PointLike) {
-  const distance = dist(point0, point1)
-
-  let transparency = 1 - (distance / (screenMaxLength))
-  transparency = (transparency - 0.75) * 5
-  if (transparency < 0)
+  const transparency = getTransparency(point0, point1)
+  if (transparency <= 0)
     return
-  ctx.lineWidth = Math.min(transparency * 2, 3)
-
-  transparency *= 255
-  transparency = Math.floor(transparency)
-  if (transparency === 0)
-    return
-  if (transparency > 255)
-    transparency = 255
 
   let opacityHex = transparency.toString(16)
   if (opacityHex.length === 1)

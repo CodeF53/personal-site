@@ -9,8 +9,12 @@ export class Point {
     this.id = Point.all.length
     this.x = x || rand(0, Point.maxX)
     this.y = y || rand(0, Point.maxY)
-    this.xV = rand(-Point.maxSpeed, Point.maxSpeed)
-    this.yV = rand(-Point.maxSpeed, Point.maxSpeed)
+
+    // Calculate xV and yV based on angular direction
+    const direction = rand(0, 2 * Math.PI)
+    const speed = rand(0, Point.maxSpeed)
+    this.xV = speed * Math.cos(direction)
+    this.yV = speed * Math.sin(direction)
 
     Point.all.push(this)
   }
