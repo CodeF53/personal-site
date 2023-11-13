@@ -13,6 +13,7 @@ body {
 
 .row { display: flex; flex-direction: row; }
 .col { display: flex; flex-direction: column; }
+.wrap { display: flex; flex-wrap: wrap; }
 
 @for $i from 1 through 5 {
   .gap#{$i} { gap: $i * 0.25rem; }

@@ -11,7 +11,7 @@
         Fluent in React, Vue, Ruby on Rails, Java, and Python.
       </p>
 
-      <ul class="links gap4 row centerChildren">
+      <ul class="links wrap gap4 centerChildren">
         <li>
           <NuxtLink to="mailto:fseusb@gmail.com" aria-label="email">
             <Icon name="material-symbols:mail-rounded" />
@@ -74,8 +74,6 @@
   .links {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
 
     li {
       background-color: var(--accent-light);
