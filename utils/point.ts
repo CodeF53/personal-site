@@ -49,6 +49,12 @@ export class Point {
     })
   }
 
+  // ran after a resize to keep points relative to where they were before
+  scalePosition(widthScalar: number, heightScalar: number) {
+    this.x *= widthScalar
+    this.y *= heightScalar
+  }
+
   static all: Point[] = []
   static maxX: number
   static maxY: number

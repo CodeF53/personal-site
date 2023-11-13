@@ -42,7 +42,7 @@
   <div>
     <h2>TODO:</h2>
     <ul>
-      <li>background: move render to worker thread, smoothly move points after a resize</li>
+      <li>background: move render to worker thread</li>
       <li>markdown articles for blogs and experience, filterable, sortable</li>
       <li>header for non-homepage pages</li>
       <li>duplicate site, but with real name and picture</li>

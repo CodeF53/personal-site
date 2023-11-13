@@ -13,20 +13,21 @@ function dumbShit(e: MouseEvent) {
   }
 }
 
+const handleResizeDebounced = useDebounce(handleResize, 500)
+
 onMounted(() => {
   if (!canvas.value)
     return
-
   initCanvas(canvas.value)
-  initPoints()
 
   intervalId.value = setInterval(renderFrame, 16)
-  addEventListener('resize', useDebounce(handleResize, 250))
+  addEventListener('resize', handleResizeDebounced)
   addEventListener('mousemove', dumbShit)
 })
 onBeforeUnmount(() => {
   if (intervalId.value)
     clearInterval(intervalId.value)
+  removeEventListener('resize', handleResizeDebounced)
   removeEventListener('mousemove', dumbShit)
 })
 </script>
