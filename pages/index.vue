@@ -7,7 +7,7 @@
 
       <p class="bio">
         I'm a {{ Math.floor((Date.now() / 100000 - 10463292) / 315360) }}yo Full Stack Developer
-        who spends a majority of their free time tinkering on mods and websites.
+        who spends a majority of their free time tinkering on websites and game mods.
         Fluent in React, Vue, Ruby on Rails, Java, and Python.
       </p>
 
