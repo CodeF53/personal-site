@@ -12,6 +12,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@nuxt/content": "^2.9.0",
     "sass": "^1.69.5",
     "scss": "^0.2.4"
   },

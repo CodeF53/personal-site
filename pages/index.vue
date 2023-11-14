@@ -12,25 +12,31 @@
       </p>
 
       <ul class="links wrap gap4 centerChildren">
-        <li>
+        <li class="interactive">
           <NuxtLink to="mailto:fseusb@gmail.com" aria-label="email">
-            <Icon name="material-symbols:mail-rounded" />
+            <Icon name="ri:mail-fill" />
             <span>Email</span>
           </NuxtLink>
         </li>
-        <li>
+        <li class="interactive">
           <NuxtLink to="https://github.com/CodeF53" aria-label="github">
             <Icon name="ph:github-logo-fill" />
             <span>Github</span>
           </NuxtLink>
         </li>
-        <li>
+        <li class="interactive">
           <NuxtLink to="https://dev.to/f53" aria-label="blog">
             <Icon name="ri:article-fill" />
             <span>Blog</span>
           </NuxtLink>
         </li>
-        <!-- <li>
+        <li class="interactive">
+          <NuxtLink to="/portfolio" aria-label="portfolio">
+            <Icon name="ri:file-list-fill" />
+            <span>Portfolio</span>
+          </NuxtLink>
+        </li>
+        <!-- <li class="interactive">
           <NuxtLink to="https://dev.to/f53" aria-label="blog">
             <Icon name="mdi:linkedin" />
             <span>LinkedIn</span>
@@ -43,8 +49,9 @@
     <h2>TODO:</h2>
     <ul>
       <li>background: move render to worker thread</li>
-      <li>markdown articles for blogs and experience, filterable, sortable</li>
-      <li>header for non-homepage pages</li>
+      <li>portfolio sorting, filtering</li>
+      <li>self-host blogs</li>
+      <li>layout for non-homepage pages</li>
       <li>duplicate site, but with real name and picture</li>
     </ul>
   </div>
@@ -53,7 +60,6 @@
 <style lang="scss">
 #home {
   --imgSize: min(20rem, 50vw, 50vh);
-  --bioSize: min(40rem, 100vw - 2rem);
   @media (max-width: 60rem) {
     flex-direction: column;
 
@@ -68,7 +74,7 @@
   }
 
   main {
-    max-width: var(--bioSize);
+    max-width: var(--content-width);
   }
 
   .links {
@@ -78,14 +84,7 @@
     li {
       background-color: var(--accent-light);
       &, > * { color: var(--accent-dark); }
-      &:hover { filter: brightness(0.95); scale: 0.95; }
-      &:active { filter: brightness(0.9); scale: 1.05; }
-      transition: scale 0.6s cubic-bezier(0.34, 3, 0.64, 1);
-
       font-weight: bold;
-      padding: .5rem .75rem;
-      border-radius: 1rem;
-      cursor: pointer;
 
       a {
         display: flex;

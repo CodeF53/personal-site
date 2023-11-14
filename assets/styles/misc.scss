@@ -3,8 +3,10 @@
   color-scheme: dark;
   --accent-dark: hsl(270, 90%, 5%);
   --accent-light: hsl(293, 88%, 84%);
-
+  --accent-dark-e1: hsl(270, 90%, 10%, 0.5);
   background-color: var(--accent-dark);
+
+  --content-width: min(40rem, 100vw - 2rem)
 }
 body {
   background-color: transparent;
