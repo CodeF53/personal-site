@@ -4,9 +4,12 @@ export default defineNuxtConfig({
   typescript: { strict: true, typeCheck: true, shim: false },
   modules: ['nuxt-lodash', 'nuxt-icon', '@nuxt/content'],
 
-  css: ['~/assets/styles/layout.scss', '~/assets/styles/misc.scss', '~/assets/styles/font.scss', '~/assets/styles/components.scss'],
+  css: ['~/assets/styles/layout.scss', '~/assets/styles/misc.scss', '~/assets/styles/font.scss', '~/assets/styles/components.scss', '~/assets/styles/structure.scss'],
 
   app: {
+    // no useless root nuxt div
+    rootTag: 'body',
+
     head: {
       htmlAttrs: { lang: 'en' },
       title: 'F53',
