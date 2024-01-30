@@ -1,5 +1,5 @@
 ---
-title: 'Flatiron School'
+title: 'Flatiron School [2022]'
 description: 'Intensive 15 week course in full-stack web development'
 tags: ['education', 'web dev']
 sortDate: 2022.08
@@ -28,4 +28,6 @@ The focus of Phase 3 was on learning Ruby. Given my experience with three progra
 Phase 4 centered on learning Ruby on Rails, a framework on top of Ruby that was very similar to how we used Ruby for backend development in Phase 3. This allowed me to finish early and begin working on my Phase 5 project ahead of schedule.
 
 ### Phase 5
-Phase 5 did not involve learning new material. Instead, participants were tasked with applying what they had learned in a solo project. Having gained a head start from the work done in Phase 4, this phase served as a culmination of the entire course.
+Phase 5 did not involve learning new material, instead it served as a culmination of the entire course where we were tasked with applying what we had learned in a solo project.
+
+Having gained a head start from the work done in Phase 4, I successfully made my very ambitious goal of an online multiplayer card game [inhumane cards](inhumane_cards)

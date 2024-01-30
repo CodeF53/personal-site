@@ -1,7 +1,7 @@
 ---
-title: 'Android App Development [DRAFT]'
+title: 'Android App Dev [2018-2020]'
 description: 'Developed, Published, and Monetized a simple arcade-like game made in Java'
-tags: ['projects']
+tags: ['projects', 'DRAFT']
 sortDate: 2019.05
 image: '/assets/flap.webp'
 ---

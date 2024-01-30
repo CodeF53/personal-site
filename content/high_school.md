@@ -1,9 +1,9 @@
 ---
-title: 'High School [DRAFT]'
+title: 'High School [2017-2021]'
 description: 'College Level Java, Python for Data Structures and Algorithms and Machine Learning'
-tags: ['education']
+tags: ['education', 'DRAFT']
 sortDate: 2017.00
-# TODO: image
+image: '/assets/highschool.webp'
 ---
 Learned a ton about programming in the 4 years I was there
 - awesome courses it offered
