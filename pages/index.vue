@@ -46,7 +46,7 @@ definePageMeta({ layout: 'home' })
   }
 
   main {
-    max-width: var(--content-width);
+    max-width: min(40rem, var(--content-width));
   }
 
   h1 { color: var(--accent-light); }
