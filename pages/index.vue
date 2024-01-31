@@ -18,15 +18,17 @@ definePageMeta({ layout: 'home' })
       <Links />
     </main>
   </div>
-  <div>
-    <h2>TODO:</h2>
-    <ul>
-      <li>background: move render to worker thread</li>
-      <li>portfolio sorting, filtering</li>
-      <li>self-host blogs</li>
-      <li>duplicate site, but with real name and picture</li>
-    </ul>
-  </div>
+  <DevOnly>
+    <div>
+      <h2>TODO:</h2>
+      <ul>
+        <li>background: move render to worker thread</li>
+        <li>portfolio sorting, filtering</li>
+        <li>self-host blogs</li>
+        <li>duplicate site, but with real name and picture</li>
+      </ul>
+    </div>
+  </DevOnly>
 </template>
 
 <style lang="scss">
