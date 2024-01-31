@@ -6,7 +6,10 @@
   <header class="col">
     <nav class="row gap2 spaceBetween alignCenter">
       <NuxtLink to="/" class="home interactive" aria-label="home">
-        <img class="pfp" src="/assets/pfp.svg">
+        <NuxtImg
+          :aria-hidden="true" alt="my profile picture" class="pfp"
+          src="/assets/pfp.low.svg" preload width="40" height="40"
+        />
       </NuxtLink>
 
       <Links />
@@ -21,8 +24,7 @@ header {
 
   nav {
     height: var(--header-height);
-    max-width: 50rem;
-    width: calc(100vw - 2rem);
+    width: var(--content-width);
   }
 
   a.home {

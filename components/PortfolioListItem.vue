@@ -10,7 +10,7 @@ const { image, title, tags, description } = article
   <NuxtLink class="portfolioListItem" :to="path">
     <div class="header wrap spaceBetween">
       <h2 class="row gap1 centerChildren">
-        <img :src="image">
+        <NuxtImg :src="image" preload :alt="title" width="24" height="24" :aria-hidden="true" />
         <span> {{ title }} </span>
       </h2>
 

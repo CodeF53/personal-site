@@ -4,7 +4,10 @@ definePageMeta({ layout: 'home' })
 
 <template>
   <div id="home" class="row centerChildren">
-    <img class="pfp" src="/assets/pfp.svg">
+    <NuxtImg
+      aria-hidden="true" alt="my profile picture" class="pfp"
+      src="/assets/pfp.svg" preload width="320" height="320"
+    />
 
     <main class="col gap2">
       <h1>Hi, I'm F53</h1>

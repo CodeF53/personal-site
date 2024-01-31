@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   // typescript: { strict: true, typeCheck: true, shim: false }, (causes build to get stuck somehow)
-  modules: ['nuxt-lodash', 'nuxt-icon', '@nuxt/content'],
+  modules: ['nuxt-lodash', 'nuxt-icon', '@nuxt/content', '@nuxt/image'],
 
   css: ['~/assets/styles/layout.scss', '~/assets/styles/misc.scss', '~/assets/styles/font.scss', '~/assets/styles/components.scss', '~/assets/styles/structure.scss'],
 
