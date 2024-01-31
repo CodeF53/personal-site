@@ -1,0 +1,29 @@
+body { margin: 0 }
+
+// by default keep page at the top of the screen
+:root { --header-height: 0px }
+// offset page giving room for header when it's present
+:root:has(header + #page) { --header-height: 3rem }
+
+#page {
+  position: fixed;
+  top: var(--header-height);
+  width: 100vw;
+  max-width: 100vw;
+  // fill vertically exactly to remaining screen size (since we
+  --root-size: calc(100vh - var(--header-height));
+  max-height: var(--root-size);
+  min-height: var(--root-size);
+  // center contents
+  display: flex;
+  flex-direction: column;
+  & > * { align-self: center; margin: auto; }
+}
+
+// only show scrollbar when needed & make header hide stuff under it
+body { overflow-y: overlay; }
+#page {
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: overlay;
+}

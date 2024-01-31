@@ -1,0 +1,25 @@
+.row { display: flex; flex-direction: row; }
+.col { display: flex; flex-direction: column; }
+.wrap { display: flex; flex-wrap: wrap; }
+
+@for $i from 1 through 5 {
+  .gap#{$i} { gap: $i * 0.25rem; }
+}
+
+.centerChildren {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spaceBetween { justify-content: space-between; }
+.spaceAround { justify-content: space-around; }
+.spaceEvenly { justify-content: space-evenly; }
+
+.spacer { flex:1; }
+
+.hidden { visibility: hidden; }
+
+.alignStart { align-self: flex-start; }
+.alignCenter { align-self: center; }
+.alignEnd { align-self: end; }
