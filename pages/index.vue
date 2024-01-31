@@ -10,7 +10,7 @@ definePageMeta({ layout: 'home' })
     />
 
     <main class="col gap2">
-      <marquee><h1>Hi, I'm F53</h1></marquee>
+      <div class=marquee><h1>Hi, I'm F53</h1></div>
 
       <p class="bio">
         I'm a {{ Math.floor((Date.now() / 100000 - 10463292) / 315360) }}yo Full Stack Developer
@@ -55,5 +55,18 @@ definePageMeta({ layout: 'home' })
   }
 
   h1 { color: var(--accent-light); }
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.marquee h1 {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
 }
 </style>
