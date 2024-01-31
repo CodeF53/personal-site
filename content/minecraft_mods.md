@@ -1,6 +1,6 @@
 ---
 title: 'Minecraft Mods [2021+]'
-description: 'Lead full-stack developer'
+description: 'QOL enhancements for Minecraft'
 tags: ['projects', 'mods', 'DRAFT']
 sortDate: 2021.08
 image: '/assets/modrinth.svg'
