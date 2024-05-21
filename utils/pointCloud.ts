@@ -7,8 +7,8 @@ export function handleResize() {
   const oldHeight = height
 
   // update canvas dimensions
-  width = window.innerWidth
-  height = window.innerHeight
+  width = window.innerWidth / 4
+  height = window.innerHeight / 4
   canvas.width = width
   canvas.height = height
 
@@ -27,8 +27,8 @@ export function handleResize() {
 }
 
 export function initCanvas(_canvas: HTMLCanvasElement) {
-  width = window.innerWidth
-  height = window.innerHeight
+  width = window.innerWidth / 4
+  height = window.innerHeight / 4
 
   canvas = _canvas
   canvas.width = width
@@ -38,7 +38,7 @@ export function initCanvas(_canvas: HTMLCanvasElement) {
   initDrawVars(ctx)
 }
 
-function initPoints(numPoints: number = 50, maxSpeed: number = 0.5) {
+function initPoints(numPoints: number = 50, maxSpeed: number = 0.125) {
   Point.all = []
   Point.maxX = width
   Point.maxY = height

@@ -11,7 +11,7 @@ body { margin: 0 }
   width: 100vw;
   max-width: 100vw;
   // fill vertically exactly to remaining screen size (since we
-  --root-size: calc(100vh - var(--header-height));
+  --root-size: calc(100svh - var(--header-height));
   max-height: var(--root-size);
   min-height: var(--root-size);
   // center contents

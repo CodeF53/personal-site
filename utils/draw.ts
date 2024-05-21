@@ -8,8 +8,8 @@ export function initDrawVars(ctx_: CanvasRenderingContext2D) {
 }
 
 export function updateDrawVars() {
-  volumeMultiplier = (window.innerHeight * window.innerWidth / 150)
-  ctx.lineWidth = 3
+  volumeMultiplier = (ctx.canvas.width * ctx.canvas.height) / 150
+  ctx.lineWidth = 0.75
 }
 
 function getTransparency(point0: PointLike, point1: PointLike) {
