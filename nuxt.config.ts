@@ -22,7 +22,7 @@ export default defineNuxtConfig({
       meta: [
         { name: 'theme-color', content: '#36026E' },
         { name: 'description', content: 'Passionate full web developer with expertise in the front and back end. Explore my portfolio to see my work and experience.' },
-        { property: 'og:description', content: 'Passionate full web developer with expertise in the front and back end. Explore my portfolio to see my work and experience.' },
+        { property: 'og:description', content: 'Passionate full stack web developer with expertise in the front and back end. Explore my portfolio to see my work and experience.' },
         { name: 'keywords', content: 'full stack development, web development, front-end development, back-end development, web design, JavaScript, HTML, CSS, React, Vue, Ruby, Ruby on Rails, NextJS, Nuxt, responsive design, portfolio, personal website, coding projects, programming, software development' },
         { name: 'author', content: 'F53' },
         { property: 'og:title', content: 'F53' },
