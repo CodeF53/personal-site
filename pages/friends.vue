@@ -19,13 +19,19 @@ const avatarProxy = 'https://dp.nea.moe/avatar/'
 </script>
 
 <template>
-  <ul class="friend_list wrap centerChildren">
-    <li v-for="friend in friends" :key="friend.id" class="interactive">
-      <NuxtLink :to="friend.url">
-        <img :src="`${avatarProxy}${friend.id}.png`">
-      </NuxtLink>
-    </li>
-  </ul>
+  <div class="col gap2 centerChildren">
+    <h1>Friends</h1>
+    <ul class="friend_list wrap centerChildren">
+      <li v-for="friend in friends" :key="friend.id" class="interactive">
+        <NuxtLink :to="friend.url">
+          <img :src="`${avatarProxy}${friend.id}.png`">
+        </NuxtLink>
+      </li>
+    </ul>
+    <p class="dim small">
+      DM me on discord to get added
+    </p>
+  </div>
 </template>
 
 <style>
