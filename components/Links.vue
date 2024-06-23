@@ -30,6 +30,12 @@
         <span>LinkedIn</span>
       </NuxtLink>
     </li> -->
+    <li class="interactive friends">
+      <NuxtLink to="/friends" aria-label="friends">
+        <Icon name="material-symbols:supervisor-account" />
+        <span>Friends</span>
+      </NuxtLink>
+    </li>
   </ul>
 </template>
 

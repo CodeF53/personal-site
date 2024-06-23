@@ -38,11 +38,11 @@ header {
   // mobile responsiveness
   .links {
     // first hide labels
-    @media (max-width: 35rem) {
+    @media (max-width: 42rem) {
       span { display: none; }
     }
     // then hide blog/email and reduce the gap between links
-    @media (max-width: 20rem) {
+    @media (max-width: 24rem) {
       .blog, .email { display: none; }
       gap: 0.25rem;
     }
