@@ -14,6 +14,7 @@ const friends = [
   { id: '821472922140803112', url: 'https://lunish.nl?utm_medium=friends' },
   { id: '899449746526183465', url: 'https://zaynedrift.com' },
   { id: '1089177218976075817', url: 'https://authenyo.xyz' },
+  { id: '1215758862444007465', url: 'https://tiramisu.gay' },
   // { id: '734079736615141426', url: 'https://catboys.zip/' },
 ]
 const avatarProxy = 'https://dp.nea.moe/avatar/'
