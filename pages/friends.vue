@@ -41,6 +41,7 @@ const avatarProxy = 'https://dp.nea.moe/avatar/'
   padding: 0;
   img {
     width: 4rem;
+    height: 4rem;
     border-radius: 1rem;
   }
 }
