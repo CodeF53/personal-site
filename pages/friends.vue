@@ -13,6 +13,7 @@ const friends = [
   { id: '455435762981273630', url: 'https://rozbrajacz.futbol' },
   { id: '821472922140803112', url: 'https://lunish.nl?utm_medium=friends' },
   { id: '899449746526183465', url: 'https://zaynedrift.com' },
+  { id: '1089177218976075817', url: 'https://authenyo.xyz' },
   // { id: '734079736615141426', url: 'https://catboys.zip/' },
 ]
 const avatarProxy = 'https://dp.nea.moe/avatar/'
