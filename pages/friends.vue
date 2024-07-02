@@ -3,7 +3,8 @@ const friends = [
   { id: '397230646231040002', url: 'https://shoritsu.xyz/' },
   { id: '1012800881474949221', url: 'https://viggy.moe/' },
   { id: '545581357812678656', url: 'https://megu.dev' },
-  { id: '477497542205243392', url: 'https://alphexo.dev/' },
+  { id: '923313823195205645', url: 'https://www.deatg.com/' },
+  { id: '929208515883569182', url: 'https://krstlskll69.github.io/' },
   { id: '334833943838720000', url: 'https://elh.gay/' },
   { id: '946388882436546640', url: 'https://wjuton.dev/' },
   { id: '381494697073573899', url: 'https://elissa.moe/' },
@@ -15,6 +16,7 @@ const friends = [
   { id: '899449746526183465', url: 'https://zaynedrift.com' },
   { id: '1089177218976075817', url: 'https://authenyo.xyz' },
   { id: '1215758862444007465', url: 'https://tiramisu.gay' },
+  { id: '477497542205243392', url: 'https://alphexo.dev/' },
   // { id: '734079736615141426', url: 'https://catboys.zip/' },
 ]
 const avatarProxy = 'https://dp.nea.moe/avatar/'
