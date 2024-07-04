@@ -18,6 +18,7 @@ const friends = [
   { id: '1215758862444007465', url: 'https://tiramisu.gay' },
   { id: '477497542205243392', url: 'https://alphexo.dev/' },
   { id: '289556910426816513', url: 'https://zt64.dev' },
+  { id: '516750892372852754', url: 'https://aspy.dev' },
   // { id: '734079736615141426', url: 'https://catboys.zip/' },
 ]
 const avatarProxy = 'https://dp.nea.moe/avatar/'
