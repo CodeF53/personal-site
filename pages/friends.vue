@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+// id is discord UserID
 const friends = [
   { id: '397230646231040002', url: 'https://shoritsu.xyz/' },
   { id: '1012800881474949221', url: 'https://viggy.moe/' },
@@ -36,7 +37,11 @@ const avatarProxy = 'https://dp.nea.moe/avatar/'
       </li>
     </ul>
     <p class="dim small">
-      DM me on discord to get added
+      dm me on discord or
+      <NuxtLink to="https://github.com/CodeF53/personal-site/blob/main/pages/friends.vue">
+        open a PR
+      </NuxtLink>
+      to get added
     </p>
   </div>
 </template>
