@@ -12,24 +12,18 @@
         <span>Github</span>
       </NuxtLink>
     </li>
-    <li class="interactive blog">
+    <!-- <li class="interactive blog">
       <NuxtLink to="https://dev.to/f53" aria-label="blog">
         <Icon name="ri:article-fill" />
         <span>Blog</span>
       </NuxtLink>
-    </li>
+    </li> -->
     <li class="interactive portfolio">
       <NuxtLink to="/portfolio" aria-label="portfolio">
         <Icon name="ri:file-list-fill" />
         <span>Portfolio</span>
       </NuxtLink>
     </li>
-    <!-- <li class="interactive linkedin">
-      <NuxtLink to="https://www.linkedin.com/in/chase-welsh/" aria-label="linkedin">
-        <Icon name="mdi:linkedin" />
-        <span>LinkedIn</span>
-      </NuxtLink>
-    </li> -->
     <li class="interactive friends">
       <NuxtLink to="/friends" aria-label="friends">
         <Icon name="material-symbols:supervisor-account" />
