@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 // id is discord UserID
-const friends = [
+const friends = ref([
   { id: '397230646231040002', url: 'https://shoritsu.xyz/' },
   { id: '1012800881474949221', url: 'https://viggy.moe/' },
   { id: '545581357812678656', url: 'https://megu.dev' },
@@ -23,7 +23,16 @@ const friends = [
   { id: '516750892372852754', url: 'https://aspy.dev' },
   { id: '734079736615141426', url: 'https://catboys.zip/' },
   { id: '165862754547138562', url: 'https://maddie.mewmews.gay' },
-]
+])
+onMounted(() => {
+  let currentIndex = friends.value.length
+  while (currentIndex !== 0) {
+    const randomIndex = Math.floor(Math.random() * currentIndex)
+    currentIndex--;
+    [friends.value[currentIndex], friends.value[randomIndex]] = [friends.value[randomIndex], friends.value[currentIndex]]
+  }
+})
+
 const avatarProxy = 'https://dp.nea.moe/avatar/'
 </script>
 
