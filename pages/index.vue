@@ -5,8 +5,9 @@ definePageMeta({ layout: 'home' })
 <template>
   <div id="home" class="row centerChildren">
     <NuxtImg
-      aria-hidden="true" alt="my profile picture" class="pfp"
-      src="/assets/pfp.svg" preload width="320" height="320"
+      aria-hidden="true" alt="my oc waving" class="pfp"
+      src="/assets/wave.png" preload width="320" height="320"
+      :placeholder="64" format="webp"
     />
 
     <main class="col gap2">

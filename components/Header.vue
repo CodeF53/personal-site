@@ -7,8 +7,9 @@
     <nav class="row gap2 spaceBetween alignCenter">
       <NuxtLink to="/" class="home interactive" aria-label="home">
         <NuxtImg
-          :aria-hidden="true" alt="my profile picture" class="pfp"
-          src="/assets/pfp.low.svg" preload width="40" height="40"
+          :aria-hidden="true" alt="my oc waving" class="pfp"
+          src="/assets/wave.png" preload width="40" height="40"
+          :placeholder="8" format="webp"
         />
       </NuxtLink>
 
