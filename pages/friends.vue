@@ -20,7 +20,7 @@ const friends = ref([
   { id: '477497542205243392', url: 'https://alphexo.dev/' },
   { id: '289556910426816513', url: 'https://zt64.dev' },
   { id: '516750892372852754', url: 'https://aspy.dev' },
-  { id: '734079736615141426', url: 'https://catboys.zip/' },
+  // { id: '734079736615141426', url: 'https://catboys.zip/' },
   { id: '165862754547138562', url: 'https://maddie.mewmews.gay' },
 ])
 onMounted(() => {
