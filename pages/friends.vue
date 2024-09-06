@@ -23,6 +23,7 @@ const friends = ref([
   // { id: '734079736615141426', url: 'https://catboys.zip/' },
   { id: '165862754547138562', url: 'https://maddie.mewmews.gay' },
   { id: '1262793452236570667', url: 'https://mitn.dev' },
+  { id: '156320970448175104', url: 'https://git.io/sr229' },
 ])
 onMounted(() => {
   let currentIndex = friends.value.length
