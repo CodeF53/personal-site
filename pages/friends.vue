@@ -20,10 +20,11 @@ const friends = ref([
   { id: '477497542205243392', url: 'https://alphexo.dev/' },
   { id: '289556910426816513', url: 'https://zt64.dev' },
   { id: '516750892372852754', url: 'https://aspy.dev' },
-  // { id: '734079736615141426', url: 'https://catboys.zip/' },
+  { id: '734079736615141426', url: 'https://catboys.zip/' },
   { id: '165862754547138562', url: 'https://maddie.mewmews.gay' },
   { id: '1262793452236570667', url: 'https://mitn.dev' },
   { id: '156320970448175104', url: 'https://git.io/sr229' },
+  { id: '412210304840237066', url: 'https://fjonkie.f53.dev/' },
 ])
 onMounted(() => {
   let currentIndex = friends.value.length
