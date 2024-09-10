@@ -5,7 +5,7 @@ const friends = ref([
   { id: '1012800881474949221', url: 'https://viggy.moe/' },
   { id: '545581357812678656', url: 'https://megu.dev' },
   { id: '923313823195205645', url: 'https://www.deatg.com/' },
-  { id: '929208515883569182', url: 'https://krstlskll69.github.io/' },
+  { id: '929208515883569182', url: 'https://krystal.f53.dev/' },
   { id: '836177139798638592', url: 'https://ashleygraves.eu/' },
   { id: '946388882436546640', url: 'https://wjuton.dev/' },
   { id: '381494697073573899', url: 'https://elissa.moe/' },
