@@ -11,7 +11,7 @@ const friends = ref([
   { id: '1215758862444007465', url: 'https://tiramisu.gay' },
   { id: '516750892372852754', url: 'https://aspy.dev' },
   { id: '734079736615141426', url: 'https://catboys.zip/' },
-  { id: '1262793452236570667', url: 'https://mitn.dev' },
+  { id: '1262793452236570667', url: 'https://cute.fm' },
   { id: '156320970448175104', url: 'https://git.io/sr229' },
 ])
 onMounted(() => {
