@@ -31,5 +31,9 @@
   }
 
   // spacing between blocks in text
-  p, pre { margin-bottom: .5rem; }
+  p, pre, ul, ol { margin-bottom: .5rem; }
+  // exclude spacing if followed by list
+  p:has(+:is(ul,ol)) {
+    margin-bottom: unset;
+  }
 }

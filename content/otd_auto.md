@@ -7,14 +7,14 @@ image: '/assets/otd.svg'
 ---
 
 ## What was OutTheDoor auto supposed to be:
-The pitch for OutTheDoor auto was a Car sales website that showed the Out The Door Price for every listing. Concept being you see the price you have to pay to get the vehicle "Out The Door". In essense this includes stuff like sales tax, title fees, registration fees, and everything else you have to pay to actually get the vehicle. CarEdge.com has a calculator for it [here](https://caredge.com/out-the-door-price).
+The pitch for OutTheDoor auto was a Car sales website that showed the Out The Door Price for every listing. Concept being you see the price you have to pay to get the vehicle "Out The Door". In essence this includes stuff like sales tax, title fees, registration fees, and everything else you have to pay to actually get the vehicle. CarEdge.com has a calculator for it [here](https://caredge.com/out-the-door-price).
 
 That's still a great concept. Hopefully someone with a brain can give a shot at it instead of my old bosses.
 
 ## What I did there
 While working at OTD Auto I created a fully functional, ready to ship rails-based website featuring:
 - A system to create and manage listings on the site
-- A robust search engine capible of handling millons of listings across the US
+- A robust search engine capable of handling millions of listings across the US
 - Dynamic, inventory based monthly subscriptions via Stripe
 - AI chatbot integrated with database providing relevant information helpful to the user
 
@@ -31,4 +31,4 @@ I alone brought the site to a nearly feature-complete state, the only things lef
 
 Throughout the entire 2 years I have "worked" at OTD, I have been waiting on my bosses to establish a single FTP server that DealerCenter can send data to. This december I asked for AWS credentials so I can implement S3 image storage. It has been a month since that message and I have gotten no reply since.
 
-I would've last year but sunk-cost falacy made me stay because they techincally owe me tens of thousands and all thats left is "just a couple things" before investment and me getting paid.
+I would've last year but sunk-cost fallacy made me stay because they technically owe me tens of thousands and all thats left is "just a couple things" before investment and me getting paid.
