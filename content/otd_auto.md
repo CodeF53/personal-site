@@ -7,9 +7,9 @@ image: '/assets/otd.svg'
 ---
 
 ## What was OutTheDoor auto supposed to be:
-The pitch for OutTheDoor auto was a Car sales website that showed the Out The Door Price for every listing. Concept being you see the price you have to pay to get the vehicle "Out The Door". In essence this includes stuff like sales tax, title fees, registration fees, and everything else you have to pay to actually get the vehicle. CarEdge.com has a calculator for it [here](https://caredge.com/out-the-door-price).
+The pitch for OutTheDoor auto was a Car sales website with an industry-leading user experience.
 
-That's still a great concept. Hopefully someone with a brain can give a shot at it instead of my old bosses.
+Portions of this article have been redacted due to my NDA.
 
 ## What I did there
 While working at OTD Auto I created a fully functional, ready to ship rails-based website featuring:
