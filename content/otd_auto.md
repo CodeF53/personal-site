@@ -31,4 +31,4 @@ I alone brought the site to a nearly feature-complete state, the only things lef
 
 Throughout the entire 2 years I have "worked" at OTD, I have been waiting on my bosses to establish a single FTP server that DealerCenter can send data to. This december I asked for AWS credentials so I can implement S3 image storage. It has been a month since that message and I have gotten no reply since.
 
-I would've last year but sunk-cost fallacy made me stay because they technically owe me tens of thousands and all thats left is "just a couple things" before investment and me getting paid.
+I would've left last year but sunk-cost fallacy made me stay because they technically owe me tens of thousands and all thats left is "just a couple things" before investment and me getting paid.
