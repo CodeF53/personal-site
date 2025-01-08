@@ -26,7 +26,7 @@ I started the project from scratch using Ruby on Rails. After getting the websit
 I worked diligently from then on, sometimes waiting weeks to get feedback from my bosses. I watched as they brought in other unpaid interns who never contributed anything to the project.
 
 I alone brought the site to a nearly feature-complete state, the only things left to do being as follows:
-- integrate with DealerCenter improve experience for large dealerships using the site
+- integrate with DealerCenter to improve the experience of large dealerships using the site
 - switch image storage from a temp SQL solution to AWS S3
 
 Throughout the entire 2 years I have "worked" at OTD, I have been waiting on my bosses to establish a single FTP server that DealerCenter can send data to. This december I asked for AWS credentials so I can implement S3 image storage. It has been a month since that message and I have gotten no reply since.
