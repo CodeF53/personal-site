@@ -5,7 +5,7 @@ const friends = ref([
   { id: '1262793452236570667', url: 'cute.fm' },
   { id: '156320970448175104', url: 'git.io/sr229' },
   { id: '683830555674279994', url: 'github.com/atvaster' },
-  { id: '1043599230247374869', url: 'github.com/mochienya' },
+  { id: '1043599230247374869', url: 'puppy.f53.dev' },
   { id: '331576593342529537', url: 'github.com/Obscure2020' },
   { id: '721351466828300350', url: 'github.com/Ran-Mewo' },
   { id: '131802833199693825', url: 'greyw0lv.github.io' },
