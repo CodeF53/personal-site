@@ -11,7 +11,7 @@ definePageMeta({ layout: 'home' })
     />
 
     <main class="col gap2">
-      <h1>Hi, I'm F53</h1>
+      <h1>Hi, I'm Cassie!</h1>
 
       <p class="bio">
         I'm a {{ Math.floor((Date.now() / 100000 - 10463292) / 315360) }}yo Full Stack Developer
