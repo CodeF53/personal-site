@@ -6,7 +6,7 @@ definePageMeta({ layout: 'home' })
   <div id="home" class="row centerChildren">
     <NuxtImg
       aria-hidden="true" alt="my oc waving" class="pfp"
-      src="/assets/wave.png" preload width="320" height="320"
+      src="/assets/wave.png" :preload="true" width="320" height="320"
       :placeholder="64" format="webp"
     />
 
