@@ -2,7 +2,7 @@
 // id is discord UserID
 const friends = ref([
   { id: '1043599230247374869', url: 'puppy.f53.dev' },
-  { id: '923313823195205645', url: 'www.deatg.com },
+  { id: '923313823195205645', url: 'www.deatg.com' },
   { id: '1262793452236570667', url: 'cute.fm' },
   { id: '156320970448175104', url: 'git.io/sr229' },
   { id: '683830555674279994', url: 'github.com/atvaster' },
