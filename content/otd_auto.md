@@ -14,7 +14,7 @@ That's still a great concept. Hopefully someone with a brain can give a shot at 
 ## What I did there
 While working at OTD Auto I created a fully functional, ready to ship rails-based website featuring:
 - A system to create and manage listings on the site
-- A robust search engine capable of handling millions of listings across the US
+- A robust, well optimized search engine capable of handling millions of listings across the US
 - Dynamic, inventory based monthly subscriptions via Stripe
 - AI chatbot integrated with database providing relevant information helpful to the user
 
