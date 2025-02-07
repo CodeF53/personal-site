@@ -1,6 +1,6 @@
 <template>
   <footer>
-    &copy; CodeF53 2022-{{ (new Date).getFullYear() }} with ❤️
+    &copy; Cassie 2022-{{ (new Date).getFullYear() }} with ❤️
   </footer>
 </template>
 

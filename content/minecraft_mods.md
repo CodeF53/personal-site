@@ -9,7 +9,7 @@ These are all QOL(quality of life), nice things to have that smooth the edges of
 
 I am continuing to maintain these to this day
 
-Each project can be read about in detail on [my Modrinth page](https://modrinth.com/user/F53/mods).
+Each project can be read about in detail on [my Modrinth page](https://modrinth.com/user/CassieNya/mods).
 Independently made several quality of life mods for Minecraft Java Edition
 - 178 thousand downloads as of February 2024.
 - experience in working on adding functionality to a large, uncommented codebase

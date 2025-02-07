@@ -35,13 +35,5 @@
     "json",
     "jsonc",
     "yaml"
-  ],
-
-  // volar as formatter
-  "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "Vue.volar"
-  }
+  ]
 }
