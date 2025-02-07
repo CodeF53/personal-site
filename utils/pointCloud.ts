@@ -45,6 +45,11 @@ function initPoints(numPoints: number = 50, maxSpeed: number = 0.125) {
   Point.maxSpeed = maxSpeed
 
   Array.from({ length: numPoints }).forEach(() => new Point())
+
+  // mouse point!
+  const mousePoint = new Point()
+  mousePoint.xV = 0
+  mousePoint.yV = 0
 }
 
 export function renderFrame() {

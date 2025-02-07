@@ -1,10 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   // typescript: { strict: true, typeCheck: true, shim: false }, (causes build to get stuck somehow)
   modules: ['nuxt-lodash', 'nuxt-icon', '@nuxt/content', '@nuxt/image'],
 
   css: ['~/assets/styles/layout.scss', '~/assets/styles/misc.scss', '~/assets/styles/font.scss', '~/assets/styles/components.scss', '~/assets/styles/structure.scss'],
+
+  // SHUT UP SHUT UP SHUT UP SHUT UP SHUT UP SHUT UP SHUT UP SHUT UP SHUT UP SHUT UP SHUT UP SHUT UP SHUT UP SHUT UP SHUT UP SHUT UP
+  vite: { css: { preprocessorOptions: { scss: { silenceDeprecations: ['mixed-decls'] } } } },
 
   app: {
     // no useless root nuxt div
@@ -31,4 +35,6 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  compatibilityDate: '2025-02-07',
 })

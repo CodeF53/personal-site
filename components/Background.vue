@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import { Neko } from 'neko-ts'
-
-const neko: Ref<Neko | undefined> = ref()
-
 const canvas: Ref<undefined | HTMLCanvasElement> = ref()
 const intervalId: Ref<undefined | NodeJS.Timeout> = ref()
 
@@ -15,13 +11,15 @@ function dumbShit(e: MouseEvent) {
     x: -(clientX - innerWidth / 2) / innerWidth,
     y: -(clientY - innerHeight / 2) / innerHeight,
   }
+
+  const mousePoint = Point.all.at(-1)!
+  mousePoint.x = clientX / 4
+  mousePoint.y = clientY / 4
 }
 
 const handleResizeDebounced = useDebounce(handleResize, 500)
 
 onMounted(() => {
-  neko.value = new Neko()
-
   if (!canvas.value)
     return
   initCanvas(canvas.value)
