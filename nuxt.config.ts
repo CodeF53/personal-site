@@ -24,6 +24,7 @@ export default defineNuxtConfig({
         { rel: 'manifest', href: '/site.webmanifest' },
       ],
       meta: [
+        { name: 'darkreader-lock'},
         { name: 'theme-color', content: '#36026E' },
         { name: 'description', content: 'Passionate full web developer with expertise in the front and back end. Explore my portfolio to see my work and experience.' },
         { property: 'og:description', content: 'Passionate full stack web developer with expertise in the front and back end. Explore my portfolio to see my work and experience.' },
