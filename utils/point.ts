@@ -7,8 +7,8 @@ export class Point {
 
   constructor(x?: number, y?: number) {
     this.id = Point.all.length
-    this.x = x || rand(0, Point.maxX)
-    this.y = y || rand(0, Point.maxY)
+    this.x = x ?? rand(0, Point.maxX)
+    this.y = y ?? rand(0, Point.maxY)
 
     // Calculate xV and yV based on angular direction
     const direction = rand(0, 2 * Math.PI)
@@ -19,9 +19,9 @@ export class Point {
     Point.all.push(this)
   }
 
-  step() {
-    this.x = mod(this.x + this.xV, Point.maxX)
-    this.y = mod(this.y + this.yV, Point.maxY)
+  step(deltaTime: number) {
+    this.x = mod(this.x + this.xV * deltaTime, Point.maxX)
+    this.y = mod(this.y + this.yV * deltaTime, Point.maxY)
   }
 
   render() {

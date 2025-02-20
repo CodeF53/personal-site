@@ -23,7 +23,6 @@ export function handleResize() {
   })
 
   updateDrawVars()
-  renderFrame()
 }
 
 export function initCanvas(_canvas: HTMLCanvasElement) {
@@ -38,7 +37,7 @@ export function initCanvas(_canvas: HTMLCanvasElement) {
   initDrawVars(ctx)
 }
 
-function initPoints(numPoints: number = 50, maxSpeed: number = 0.125) {
+function initPoints(numPoints: number = 50, maxSpeed: number = 0.0078125) {
   Point.all = []
   Point.maxX = width
   Point.maxY = height
@@ -52,10 +51,10 @@ function initPoints(numPoints: number = 50, maxSpeed: number = 0.125) {
   mousePoint.yV = 0
 }
 
-export function renderFrame() {
+export function renderFrame(deltaTime: number) {
   ctx.fillStyle = '#0d0118'
   ctx.fillRect(0, 0, width, height)
 
-  Point.all.forEach(point => point.step())
+  Point.all.forEach(point => point.step(deltaTime))
   Point.all.forEach(point => point.render())
 }

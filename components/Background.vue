@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const canvas: Ref<undefined | HTMLCanvasElement> = ref()
-const intervalId: Ref<undefined | NodeJS.Timeout> = ref()
+const animationId: Ref<undefined | number> = ref()
+const lastTime: Ref<DOMHighResTimeStamp> = ref(0)
 
 const backgroundOffset: Ref<{ x: number, y: number }> = ref({ x: 0, y: 0 })
 function dumbShit(e: MouseEvent) {
@@ -17,21 +18,28 @@ function dumbShit(e: MouseEvent) {
   mousePoint.y = clientY / 4
 }
 
-const handleResizeDebounced = useDebounce(handleResize, 500)
+const handleResizeThrottled = useThrottle(handleResize, 20)
+
+function animate(time: number) {
+  const deltaTime = time - lastTime.value
+  lastTime.value = time
+  renderFrame(deltaTime)
+  animationId.value = requestAnimationFrame(animate)
+}
 
 onMounted(() => {
   if (!canvas.value)
     return
   initCanvas(canvas.value)
 
-  intervalId.value = setInterval(renderFrame, 16)
-  addEventListener('resize', handleResizeDebounced)
+  animationId.value = requestAnimationFrame(animate)
+  addEventListener('resize', handleResize)
   addEventListener('mousemove', dumbShit)
 })
 onBeforeUnmount(() => {
-  if (intervalId.value)
-    clearInterval(intervalId.value)
-  removeEventListener('resize', handleResizeDebounced)
+  if (animationId.value !== undefined)
+    cancelAnimationFrame(animationId.value)
+  removeEventListener('resize', handleResizeThrottled)
   removeEventListener('mousemove', dumbShit)
 })
 </script>
