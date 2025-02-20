@@ -33,7 +33,7 @@ export function initCanvas(_canvas: HTMLCanvasElement) {
   canvas = _canvas
   canvas.width = width
   canvas.height = height
-  ctx = canvas.getContext('2d')!
+  ctx = canvas.getContext('2d', { alpha: false })!
   initPoints()
   initDrawVars(ctx)
 }
@@ -53,7 +53,8 @@ function initPoints(numPoints: number = 50, maxSpeed: number = 0.125) {
 }
 
 export function renderFrame() {
-  ctx.clearRect(0, 0, width, height)
+  ctx.fillStyle = '#0d0118'
+  ctx.fillRect(0, 0, width, height)
 
   Point.all.forEach(point => point.step())
   Point.all.forEach(point => point.render())

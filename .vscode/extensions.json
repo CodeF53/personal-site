@@ -1,5 +1,6 @@
 {
   "recommendations": [
-    "nuxtr.nuxt-vscode-extentions"
+    "nuxtr.nuxt-vscode-extentions",
+    "dbaeumer.vscode-eslint"
   ]
 }
