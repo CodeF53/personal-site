@@ -18,7 +18,7 @@ function dumbShit(e: MouseEvent) {
   mousePoint.y = clientY / 4
 }
 
-const handleResizeThrottled = useThrottle(handleResize, 20)
+const handleResizeThrottled = useThrottle(handleResize, 33) // scale point positions at 30hz
 
 function animate(time: number) {
   const deltaTime = time - lastTime.value
