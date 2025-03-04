@@ -21,6 +21,7 @@
 <style lang="scss">
 header {
   position: fixed; inset: 0;
+  bottom: unset;
   z-index: 100;
 
   nav {
