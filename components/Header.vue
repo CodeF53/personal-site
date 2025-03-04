@@ -20,8 +20,8 @@
 
 <style lang="scss">
 header {
-  position: fixed; top: 0;
-  left: 0; right: 0;
+  position: fixed; inset: 0;
+  z-index: 100;
 
   nav {
     height: var(--header-height);

@@ -1,10 +1,18 @@
+<script setup lang="ts">
+import EmailModal from './EmailModal.vue'
+
+const emailModal = ref<InstanceType<typeof EmailModal>>()
+</script>
+
 <template>
+  <EmailModal ref="emailModal" />
+
   <ul class="links wrap gap4 centerChildren">
     <li class="interactive email">
-      <NuxtLink to="mailto:fseusb@gmail.com" aria-label="email">
+      <div aria-label="email" @click="emailModal!.open()">
         <Icon name="ri:mail-fill" />
         <span>Email</span>
-      </NuxtLink>
+      </div>
     </li>
     <li class="interactive github">
       <NuxtLink to="https://github.com/CodeF53" aria-label="github">
@@ -43,7 +51,7 @@
     &, > * { color: var(--accent-dark); }
     font-weight: bold;
 
-    a {
+    a, div {
       display: flex;
       gap: .25rem;
       justify-content: center;

@@ -33,7 +33,7 @@ onMounted(() => {
   initCanvas(canvas.value)
 
   animationId.value = requestAnimationFrame(animate)
-  addEventListener('resize', handleResize)
+  addEventListener('resize', handleResizeThrottled)
   addEventListener('mousemove', dumbShit)
 })
 onBeforeUnmount(() => {
