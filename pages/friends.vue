@@ -8,7 +8,7 @@ const friends = ref([
   { id: '683830555674279994', url: 'github.com/atvaster' },
   { id: '331576593342529537', url: 'github.com/Obscure2020' },
   { id: '721351466828300350', url: 'github.com/Ran-Mewo' },
-  { id: '176384198570016768', url: 'github.com/mistrk7' },
+  { id: '176384198570016768', url: 'misterk.in' },
   { id: '909088839769944114', url: 'github.com/rhysdh540' },
 ])
 onMounted(() => {
